@@ -5,6 +5,8 @@ import Nav from './components/Nav'
 import NavLink from './components/NavLink'
 import Home from './views/Home'
 import About from './views/About'
+import { jquery as $ } from 'jquery'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 
 // Define routes(pages)
