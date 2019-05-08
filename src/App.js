@@ -1,16 +1,44 @@
 import React from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Helmet from 'react-helmet'
+import Nav from './components/Nav'
+import NavLink from './components/NavLink'
+import Home from './views/Home'
+import About from './views/About'
 import './App.css'
+
+// Define routes(pages)
+const routes = [
+  {
+    title: 'Home',
+    path: '/',
+    component: Home,
+    exact: true
+  }, {
+    title: 'About',
+    path: '/about',
+    component: About
+  }
+]
 
 function App() {
   return (
     <div className="App">
-      <Helmet title="Ignited Local Builds" />
-      <header className="App-header">
-        <h1 className="test">
-          Ignited Local Deving
-        </h1>
-      </header>
+      <Router>
+        <Helmet title="Ignited Local Builds" />
+        <Nav>
+          {
+            routes.map((route, i) => {
+              return <NavLink key={i} {...route} />
+            })
+          }
+        </Nav>
+        {
+          routes.map((route, i) => {
+            return <Route key={i} {...route} />
+          })
+        }
+      </Router>
     </div>
   )
 }
