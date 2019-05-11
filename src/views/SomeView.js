@@ -1,6 +1,7 @@
 import React from 'react'
 
-function Home(props) {
+function SomeView(props) {
+	console.log(props)
 	return (
 		<div className='main-container'>
 			<section className='text-center imagebg' data-overlay='4'>
@@ -29,4 +30,4 @@ function Home(props) {
 	)
 }
 
-export default Home
+export default SomeView

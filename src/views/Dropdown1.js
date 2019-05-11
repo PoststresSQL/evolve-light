@@ -1,6 +1,7 @@
 import React from 'react'
 
-function Home(props) {
+function DropDown1(props) {
+	console.log(props)
 	return (
 		<div className='main-container'>
 			<section className='text-center imagebg' data-overlay='4'>
@@ -13,7 +14,7 @@ function Home(props) {
 				<div className='container'>
 					<div className='row'>
 						<div className='col-sm-10 col-md-8'>
-							<h1>This is the view of {}</h1>
+							<h1>This is the view of Dropdown 1</h1>
 							<p className='lead'>
 								Lorem ipsum dolor sit amet consectetur
 								adipisicing elit. Reiciendis ratione, esse
@@ -29,4 +30,4 @@ function Home(props) {
 	)
 }
 
-export default Home
+export default DropDown1
