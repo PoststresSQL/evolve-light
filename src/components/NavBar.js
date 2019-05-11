@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import NavLink from './NavLink'
+import DropdownNavLink from './DropdownNavLink'
 
-function NavBar() {
+function NavBar({ routes }) {
 	return (
 		<div className='nav-container'>
 			<div className='bar bar--sm visible-xs' />
@@ -28,7 +30,20 @@ function NavBar() {
 						<div className='col-md-10 col-sm-9 text-right text-left-sm text-left xs'>
 							<div className='bar__module'>
 								<ul className='menu-horizontal text-left'>
-									{/* nav routes go here */}
+									{routes.map((route, i) => {
+										if (route.subroutes) {
+											return (
+												<DropdownNavLink
+													key={i}
+													{...route}
+												/>
+											)
+										} else {
+											return (
+												<NavLink key={i} {...route} />
+											)
+										}
+									})}
 								</ul>
 							</div>
 						</div>

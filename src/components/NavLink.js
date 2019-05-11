@@ -1,10 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function NavLink() {
+function NavLink({ title, path }) {
 	return (
 		<li>
-			<Link to='#'>{/* Path Title goes here */}</Link>
+			<Link to={path} title={title}>
+				{title}
+			</Link>
 		</li>
 	)
 }
+
+export default NavLink
