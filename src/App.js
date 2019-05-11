@@ -1,11 +1,10 @@
 import React from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Helmet from 'react-helmet'
-import Nav from './components/Nav'
-import NavLink from './components/NavLink'
+import NavBar from './components/NavBar'
 import Home from './views/Home'
+import SomeView from './views/SomeView'
 import About from './views/About'
-import { jquery as $ } from 'jquery'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 
@@ -21,6 +20,27 @@ const routes = [
 		title: 'About',
 		path: '/about',
 		component: About
+	},
+	{
+		title: 'Dropdown Link',
+		path: '/dropdown',
+		routes: [
+			{
+				title: 'Dropdown 1',
+				path: '/dropdown-1',
+				component: SomeView
+			},
+			{
+				title: 'Dropdown 2',
+				path: '/dropdown-2',
+				component: SomeView
+			},
+			{
+				title: 'Dropdown 3',
+				path: '/dropdown-3',
+				component: SomeView
+			}
+		]
 	}
 ]
 
@@ -29,11 +49,7 @@ function App() {
 		<div className='App'>
 			<Router>
 				<Helmet title='Ignited Local Builds' />
-				<Nav>
-					{routes.map((route, i) => {
-						return <NavLink key={i} {...route} />
-					})}
-				</Nav>
+				<NavBar />
 				{routes.map((route, i) => {
 					return <Route key={i} {...route} />
 				})}
