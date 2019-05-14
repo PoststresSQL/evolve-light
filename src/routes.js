@@ -13,30 +13,88 @@ export const routes = [
 		exact: true
 	},
 	{
-		title: 'About',
-		path: '/about',
+		title: 'Services',
+		path: '/services',
+		subroutes: [
+			{
+				title: 'Purchase',
+				path: '/dropdown/purchase',
+				subroutes: [
+					{
+						title: 'Residential',
+						path: '/dropdown/purchase/residential',
+						component: PurchaseResidential
+					},
+					{
+						title: 'Commercial',
+						path: '/dropdown/purchase/commercial',
+						component: PurchaseCommercial
+					}
+				]
+			},
+			{
+				title: 'Refinance',
+				path: '/dropdown/refinance',
+				subroutes: [
+					{
+						title: 'Residential',
+						path: '/dropdown/refinance/residential',
+						component: RefinanceResidential
+					},
+					{
+						title: 'Commercial',
+						path: '/dropdown/refinance/commercial',
+						component: RefinanceCommercial
+					},
+					{
+						title: 'Debt Consolidation',
+						path: '/dropdown/refinance/debt-consolidation',
+						component: DebtConsolidation
+					},
+					{
+						title: 'Commercial',
+						path: '/dropdown/refinance/home-improvment',
+						component: HomeImprovment
+					}
+				]
+			},
+			{
+				title: 'Construction',
+				path: '/dropdown/construction',
+				subroutes: [
+					{
+						title: 'Residential',
+						path: '/dropdown/construction/residential',
+						component: ConstructionResidential
+					},
+					{
+						title: 'Commercial',
+						path: '/dropdown/construction/commercial',
+						component: ConstructionCommercial
+					}
+				]
+			}
+		]
+	},
+	{
+		title: 'Mortgage Calculator',
+		path: '/mortgage-calculator',
+		component: MortgageCalculator
+	},
+	{
+		title: 'Testimonials',
+		path: '/testimonials',
+		component: Testimonials
+	},
+	{
+		title: 'About Us',
+		path: '/about-us',
 		component: About
 	},
 	{
-		title: 'Dropdown Link',
-		path: '/dropdown/:service',
-		subroutes: [
-			{
-				title: 'Dropdown 1',
-				path: '/dropdown/dropdown-1',
-				component: Dropdown1
-			},
-			{
-				title: 'Dropdown 2',
-				path: '/dropdown/dropdown-2',
-				component: Dropdown2
-			},
-			{
-				title: 'Dropdown 3',
-				path: '/dropdown/dropdown-3',
-				component: Dropdown3
-			}
-		]
+		title: 'Contact',
+		path: '/contact',
+		component: Contact
 	}
 ]
 
