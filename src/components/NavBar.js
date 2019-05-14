@@ -31,18 +31,19 @@ function NavBar({ routes }) {
 							<div className='bar__module'>
 								<ul className='menu-horizontal text-left'>
 									{routes.map((route, i) => {
-										if (route.subroutes) {
-											return (
-												<DropdownNavLink
-													key={i}
-													{...route}
-												/>
-											)
-										} else {
-											return (
-												<NavLink key={i} {...route} />
-											)
-										}
+										console.log(route)
+										// if (route.subroutes) {
+										// 	return (
+										// 		<DropdownNavLink
+										// 			key={i}
+										// 			{...route}
+										// 		/>
+										// 	)
+										// } else {
+										// 	return (
+										// 		<NavLink key={i} {...route} />
+										// 	)
+										// }
 									})}
 								</ul>
 							</div>

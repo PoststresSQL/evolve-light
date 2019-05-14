@@ -18,7 +18,13 @@ function App() {
 						return <Route key={i} {...route} />
 					} else {
 						return route.subroutes.map((subroute, j) => {
-							return <Route key={j} {...subroute} />
+							if (subroute.hasOwnProperty('component')) {
+								return <Route key={j} {...subroute} />
+							} else {
+								return subroute.subroutes.map((subroute, k) => {
+									return <Route key={k} {...subroute} />
+								})
+							}
 						})
 					}
 				})}

@@ -1,8 +1,16 @@
-import Home from './views/Home'
-import Dropdown1 from './views/Dropdown1'
-import Dropdown2 from './views/Dropdown2'
-import Dropdown3 from './views/Dropdown3'
 import About from './views/About'
+import ConstructionCommercial from './views/ConstructionCommercial'
+import ConstructionResidential from './views/ConstructionResidential'
+import Contact from './views/Contact'
+import DebtConsolidation from './views/DebtConsolidation'
+import Home from './views/Home'
+import HomeImprovment from './views/HomeImprovment'
+import MortgageCalculator from './views/MortgageCalculator'
+import PurchaseCommercial from './views/PurchaseCommercial'
+import PurchaseResidential from './views/PurchaseResidential'
+import RefinanceCommercial from './views/RefinanceCommercial'
+import RefinanceResidential from './views/RefinanceResidential'
+import Testimonials from './views/Testimonials'
 
 // Define routes(pages)
 export const routes = [
