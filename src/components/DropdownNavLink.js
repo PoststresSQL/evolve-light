@@ -11,15 +11,24 @@ function DropdownNavLink({ title, subroutes }) {
 						<div className='dropdown__content col-md-2'>
 							<ul className='menu-vertical'>
 								{subroutes.map((subroute, i) => {
-									return (
-										<li key={i}>
-											<Link
-												to={subroute.path}
-												title={subroute.title}>
-												{subroute.title}
-											</Link>
-										</li>
-									)
+									if (subroute.hasOwnProperty('subroutes')) {
+										return (
+											<DropdownNavLink
+												key={i}
+												{...subroute}
+											/>
+										)
+									} else {
+										return (
+											<li key={i}>
+												<Link
+													to={subroute.path}
+													title={subroute.title}>
+													{subroute.title}
+												</Link>
+											</li>
+										)
+									}
 								})}
 							</ul>
 						</div>

@@ -1,7 +1,6 @@
 import React from 'react'
 
-function DropDown3(props) {
-	console.log(props)
+function RefinanceResidential(props) {
 	return (
 		<div className='main-container'>
 			<section className='text-center imagebg' data-overlay='4'>
@@ -30,4 +29,4 @@ function DropDown3(props) {
 	)
 }
 
-export default DropDown3
+export default RefinanceResidential

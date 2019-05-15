@@ -26,58 +26,58 @@ export const routes = [
 		subroutes: [
 			{
 				title: 'Purchase',
-				path: '/dropdown/purchase',
+				path: '/services/purchase',
 				subroutes: [
 					{
 						title: 'Residential',
-						path: '/dropdown/purchase/residential',
+						path: '/services/purchase/residential',
 						component: PurchaseResidential
 					},
 					{
 						title: 'Commercial',
-						path: '/dropdown/purchase/commercial',
+						path: '/services/purchase/commercial',
 						component: PurchaseCommercial
 					}
 				]
 			},
 			{
 				title: 'Refinance',
-				path: '/dropdown/refinance',
+				path: '/services/refinance',
 				subroutes: [
 					{
 						title: 'Residential',
-						path: '/dropdown/refinance/residential',
+						path: '/services/refinance/residential',
 						component: RefinanceResidential
 					},
 					{
 						title: 'Commercial',
-						path: '/dropdown/refinance/commercial',
+						path: '/services/refinance/commercial',
 						component: RefinanceCommercial
 					},
 					{
 						title: 'Debt Consolidation',
-						path: '/dropdown/refinance/debt-consolidation',
+						path: '/services/refinance/debt-consolidation',
 						component: DebtConsolidation
 					},
 					{
 						title: 'Commercial',
-						path: '/dropdown/refinance/home-improvment',
+						path: '/services/refinance/home-improvment',
 						component: HomeImprovment
 					}
 				]
 			},
 			{
 				title: 'Construction',
-				path: '/dropdown/construction',
+				path: '/services/construction',
 				subroutes: [
 					{
 						title: 'Residential',
-						path: '/dropdown/construction/residential',
+						path: '/services/construction/residential',
 						component: ConstructionResidential
 					},
 					{
 						title: 'Commercial',
-						path: '/dropdown/construction/commercial',
+						path: '/services/construction/commercial',
 						component: ConstructionCommercial
 					}
 				]

@@ -1,7 +1,6 @@
 import React from 'react'
 
-function DropDown2(props) {
-	console.log(props)
+function PurchaseCommercial(props) {
 	return (
 		<div className='main-container'>
 			<section className='text-center imagebg' data-overlay='4'>
@@ -30,4 +29,4 @@ function DropDown2(props) {
 	)
 }
 
-export default DropDown2
+export default PurchaseCommercial

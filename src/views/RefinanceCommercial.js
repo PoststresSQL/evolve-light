@@ -1,7 +1,6 @@
 import React from 'react'
 
-function SomeView(props) {
-	console.log(props)
+function RefinanceCommercial(props) {
 	return (
 		<div className='main-container'>
 			<section className='text-center imagebg' data-overlay='4'>
@@ -30,4 +29,4 @@ function SomeView(props) {
 	)
 }
 
-export default SomeView
+export default RefinanceCommercial
