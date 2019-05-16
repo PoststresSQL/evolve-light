@@ -16,6 +16,7 @@ import {
 	faHeart,
 	faCampground
 } from '@fortawesome/free-solid-svg-icons'
+import { faCheckCircle } from '@fortawesome/free-regular-svg-icons'
 import {
 	faTwitter,
 	faFacebook,
@@ -28,7 +29,8 @@ library.add(
 	faCampground,
 	faTwitter,
 	faFacebook,
-	faInstagram
+	faInstagram,
+	faCheckCircle
 )
 
 function App() {
