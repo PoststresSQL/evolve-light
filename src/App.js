@@ -3,15 +3,32 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { routes } from './routes'
 import Helmet from 'react-helmet'
 import NavBar from './components/NavBar'
+import Footer from './components/Footer'
+// Stylesheets
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './theme.css'
 import './App.css'
+
+// FontAwesome setup
+import { library } from '@fortawesome/fontawesome-svg-core'
+import {
+	faEnvelope,
+	faHeart,
+	faCampground
+} from '@fortawesome/free-solid-svg-icons'
+import {
+	faTwitter,
+	faFacebook,
+	faInstagram
+} from '@fortawesome/fontawesome-free-brands'
+
+library.add(faEnvelope, faHeart, faCampground)
 
 function App() {
 	return (
 		<div className='App'>
 			<Router>
-				<Helmet title='Ignited Local Builds' />
+				<Helmet title='Eagle Mortgage' />
 				<NavBar routes={routes} />
 				{routes.map((route, i) => {
 					if (route.hasOwnProperty('component')) {
@@ -28,6 +45,7 @@ function App() {
 						})
 					}
 				})}
+				<Footer />
 			</Router>
 		</div>
 	)
