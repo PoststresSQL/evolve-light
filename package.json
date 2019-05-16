@@ -24,7 +24,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "postbuild": "react-snapshot",
-    "makeview": "func() { cp ./src/views/Home.js ./src/views/\"$1\".js; }; func",
+    "makeview": "func() { cp ./src/views/Template.js ./src/views/\"$1\".js; }; func",
     "makecomp": "func() { cp ./src/components/Template.js ./src/components/\"$1\".js; }; func"
   },
   "eslintConfig": {

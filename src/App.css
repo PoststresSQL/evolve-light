@@ -3,9 +3,9 @@
 	--dark-black: rgb(18, 18, 18);
 	--light-black: rgb(74, 74, 74);
 	--smokewhite: rgb(245, 245, 245);
-	--primary: rgb(191, 79, 160);
-	--secondary: rgb(58, 175, 169);
-	--white-text: rgba(245, 245, 245, 0.8);
+	--primary: rgb(155, 12, 67);
+	--secondary: rgb(4, 42, 56);
+	--whitecrest: rgb(247, 245, 235);
 	--shadow: rgba(0, 0, 0, 0.2);
 }
 
@@ -119,6 +119,18 @@ section {
 	background: var(--primary);
 }
 
+.bg--primary {
+	color: var(--whitecrest);
+}
+
+.bg--secondary {
+	background: var(--secondary);
+}
+
+.bg--secondary * {
+	color: var(--smokewhite);
+}
+
 .text__container--bright h1,
 .text__container--bright h2,
 .text__container--bright h3,
@@ -153,7 +165,7 @@ __________________________*/
 .big-title {
 	font-size: 3.5em;
 	font-weight: 700;
-	margin-bottom: 1.2rem;
+	margin-bottom: 2rem;
 }
 
 .el--align-center {
@@ -281,6 +293,18 @@ __________________________*/
 /* HEADER SECTION
 __________________________*/
 
+#home-hero .background-image-holder {
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: rgba(0, 0, 0, 0);
+	background-image: url('https://placehold.it/1920x1080');
+	background-origin: padding-box;
+	background-position: initial;
+	background-repeat: repeat;
+	background-size: auto;
+	opacity: 1;
+}
+
 .background-image-holder::before {
 	background: var(--shadow);
 	bottom: 0;
@@ -333,7 +357,7 @@ __________________________*/
 __________________________*/
 
 footer.footer-2.bg--dark {
-	background: var(--dark-black);
+	background: var(--secondary);
 }
 
 footer.footer-2.bg--dark:not(.nav-bar):not(.bar) h6,
@@ -364,77 +388,15 @@ footer.footer-2.bg--dark:not(.nav-bar):not(.bar) a:not(.btn) {
 	padding: 0 1em 0.5em 0;
 }
 
-/*  TESTIMONIALS CARDS
-_______________________________*/
-figure.testimonial-card {
-	box-shadow: none !important;
-	color: var(--light-black);
-	margin: 0.625rem;
-	min-width: 220px;
-	position: relative;
-	width: 100%;
-	text-align: left;
+/* CARDS */
+.card {
+	margin-bottom: 3rem;
+	transition: transform 0.3s, box-shadow 0.3s;
 }
 
-figure.testimonial-card blockquote {
-	background-color: var(--smokewhite);
-	border-radius: 0.5rem;
-	box-shadow: 0 0.5rem 0.2rem var(--shadow);
-	display: block;
-	font-size: 1rem;
-	font-weight: 500;
-	line-height: 1.6em;
-	margin: 0 0 -40px;
-	padding: 30px 50px 65px 50px;
-	position: relative;
-}
-
-figure.testimonial-card blockquote:before,
-figure.testimonial-card blockquote:after {
-	content: '\201C';
-	font-family: 'FontAwesome';
-	font-size: 4rem;
-	font-style: normal;
-	opacity: 0.3;
-	position: absolute;
-}
-
-figure.testimonial-card blockquote:before {
-	left: 1.25rem;
-	top: 2rem;
-}
-
-figure.testimonial-card blockquote:after {
-	bottom: 2rem;
-	content: '\201D';
-	right: 1.25rem;
-}
-
-figure.testimonial-card .author {
-	color: var(--smokewhite);
-	display: block;
-	height: 80px;
-	margin: 0;
-	padding: 0 2rem;
-	position: relative;
-	text-align: left;
-}
-figure.testimonial-card .author h5,
-figure.testimonial-card .author span {
-	left: 50%;
-	opacity: 0.8;
-	padding: 3px 5px;
-	position: absolute;
-}
-figure.testimonial-card .author h5 {
-	bottom: 50%;
-	color: var(--primary);
-	font-weight: 800;
-	margin: 0;
-	text-transform: uppercase;
-}
-figure.testimonial-card .author span {
-	color: var(--light-black);
-	font-size: 0.8em;
-	top: 50%;
+.card:hover {
+	box-shadow: 0 0.5rem 1rem var(--shadow);
+	text-decoration: none;
+	transform: translateY(-0.5rem);
+	transition: transform 0.3s, box-shadow 0.3s;
 }

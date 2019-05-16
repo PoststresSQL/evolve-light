@@ -22,7 +22,14 @@ import {
 	faInstagram
 } from '@fortawesome/fontawesome-free-brands'
 
-library.add(faEnvelope, faHeart, faCampground)
+library.add(
+	faEnvelope,
+	faHeart,
+	faCampground,
+	faTwitter,
+	faFacebook,
+	faInstagram
+)
 
 function App() {
 	return (

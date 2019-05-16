@@ -1,16 +1,17 @@
-import About from './views/About'
-import ConstructionCommercial from './views/ConstructionCommercial'
-import ConstructionResidential from './views/ConstructionResidential'
-import Contact from './views/Contact'
-import DebtConsolidation from './views/DebtConsolidation'
 import Home from './views/Home'
-import HomeImprovment from './views/HomeImprovment'
+import Template from './views/Template'
 import MortgageCalculator from './views/MortgageCalculator'
-import PurchaseCommercial from './views/PurchaseCommercial'
-import PurchaseResidential from './views/PurchaseResidential'
-import RefinanceCommercial from './views/RefinanceCommercial'
-import RefinanceResidential from './views/RefinanceResidential'
+import Purchase from './views/Purchase'
+import Refinance from './views/Refinance'
+import Construction from './views/Construction'
+import GovernmentLoan from './views/GovernmentLoan'
+import ConventionalLoan from './views/ConventionalLoan'
+import ConstructionLoan from './views/ConstructionLoan'
+import HardMoneyLoan from './views/HardMoneyLoan'
+import DownPaymentAssistance from './views/DownPaymentAssistance'
+import About from './views/About'
 import Testimonials from './views/Testimonials'
+import Contact from './views/Contact'
 
 // Define routes(pages)
 export const routes = [
@@ -21,68 +22,19 @@ export const routes = [
 		exact: true
 	},
 	{
-		title: 'Services',
-		path: '/services',
-		subroutes: [
-			{
-				title: 'Purchase',
-				path: '/services/purchase',
-				subroutes: [
-					{
-						title: 'Residential',
-						path: '/services/purchase/residential',
-						component: PurchaseResidential
-					},
-					{
-						title: 'Commercial',
-						path: '/services/purchase/commercial',
-						component: PurchaseCommercial
-					}
-				]
-			},
-			{
-				title: 'Refinance',
-				path: '/services/refinance',
-				subroutes: [
-					{
-						title: 'Residential',
-						path: '/services/refinance/residential',
-						component: RefinanceResidential
-					},
-					{
-						title: 'Commercial',
-						path: '/services/refinance/commercial',
-						component: RefinanceCommercial
-					},
-					{
-						title: 'Debt Consolidation',
-						path: '/services/refinance/debt-consolidation',
-						component: DebtConsolidation
-					},
-					{
-						title: 'Commercial',
-						path: '/services/refinance/home-improvment',
-						component: HomeImprovment
-					}
-				]
-			},
-			{
-				title: 'Construction',
-				path: '/services/construction',
-				subroutes: [
-					{
-						title: 'Residential',
-						path: '/services/construction/residential',
-						component: ConstructionResidential
-					},
-					{
-						title: 'Commercial',
-						path: '/services/construction/commercial',
-						component: ConstructionCommercial
-					}
-				]
-			}
-		]
+		title: 'Purchase',
+		path: '/purchase',
+		component: Purchase
+	},
+	{
+		title: 'Refinance',
+		path: '/refinance',
+		component: Refinance
+	},
+	{
+		title: 'Construction',
+		path: '/construction',
+		component: Construction
 	},
 	{
 		title: 'Mortgage Calculator',
@@ -90,19 +42,59 @@ export const routes = [
 		component: MortgageCalculator
 	},
 	{
-		title: 'Testimonials',
-		path: '/testimonials',
-		component: Testimonials
+		title: 'Loan Options',
+		subroutes: [
+			{
+				title: 'Government Loan',
+				path: '/loan-options/government-loan',
+				component: GovernmentLoan
+			},
+			{
+				title: 'Conventional Loan',
+				path: '/loan-options/conventional-loan',
+				component: ConventionalLoan
+			},
+			{
+				title: 'Construction Loan',
+				path: '/loan-options/construction-loan',
+				component: ConstructionLoan
+			},
+			{
+				title: 'Hard Money Loan',
+				path: '/loan-options/hard-money-loan',
+				component: HardMoneyLoan
+			},
+			{
+				title: 'Down Payment Assistance',
+				path: '/loan-options/down-payment-assistance',
+				component: DownPaymentAssistance
+			}
+		]
 	},
 	{
-		title: 'About Us',
-		path: '/about-us',
-		component: About
-	},
-	{
-		title: 'Contact',
-		path: '/contact',
-		component: Contact
+		title: 'Our Company',
+		subroutes: [
+			{
+				title: 'Testimonials',
+				path: '/our-company/testimonials',
+				component: Testimonials
+			},
+			{
+				title: 'About Us',
+				path: '/our-company/about-us',
+				component: About
+			},
+			{
+				title: 'Contact',
+				path: '/our-company/contact',
+				component: Contact
+			},
+			{
+				title: 'Blog',
+				path: '/blog-url',
+				component: Template
+			}
+		]
 	}
 ]
 
