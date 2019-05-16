@@ -4,18 +4,24 @@ import { FontAwesomeIcon as FAI } from '@fortawesome/react-fontawesome'
 function About() {
 	return (
 		<div className='main-container'>
-			<section id='about-hero'>
-				<div className='row'>
-					<div
-						className='col-md-4 about-hero-img'
-						style={{
-							backgroundImage:
-								"url('https://placehold.it/435x530')"
-						}}
+			<section className='cover imagebg height-auto' data-overlay='4'>
+				<div className='background-image-holder'>
+					<img
+						alt='background'
+						src='/users/u143/143632/background-01-smr.jpg'
 					/>
-					<div className='col-md-8'>
-						<h3>Eagles Mortgage</h3>
-						<h1>Helping You Afford Your Dream Home</h1>
+				</div>
+				<div className='container pos-vertical-center'>
+					<div className='row'>
+						<div className='col-sm-8 col-md-7'>
+							<h1>Eagles Mortgage</h1>
+							<p className='lead'>
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Maxime dolorum suscipit
+								asperiores placeat accusantium rerum animi
+								consequuntur sed optio inventore!
+							</p>
+						</div>
 					</div>
 				</div>
 			</section>

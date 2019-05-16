@@ -5,7 +5,7 @@ import { FontAwesomeIcon as FAI } from '@fortawesome/react-fontawesome'
 function Refinance() {
 	return (
 		<div className='main-container'>
-			<section className='text-center imagebg' data-overlay='4'>
+			<section className='imagebg' data-overlay='4'>
 				<div className='background-image-holder'>
 					<img
 						alt='background'
@@ -48,7 +48,7 @@ function Refinance() {
 								</p>
 								<a
 									className='btn btn--primary type--uppercase'
-									href='/get-a-quote'>
+									href='/get-a-quote/refinance-calculator'>
 									<span className='btn__text'>
 										Get a Quote
 									</span>

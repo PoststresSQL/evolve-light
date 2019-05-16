@@ -290,6 +290,23 @@ __________________________*/
 	pointer-events: auto;
 }
 
+.bar {
+	padding: 0;
+}
+
+.bar .logo {
+	max-height: 4em;
+	top: 0;
+}
+
+.bar .col-md-2 .bar__module {
+	padding: 1em 0;
+}
+
+.bar .col-md-10 .bar__module .menu-horizontal {
+	padding: 1.85714286em 0;
+}
+
 /* HEADER SECTION
 __________________________*/
 
@@ -402,65 +419,6 @@ footer.footer-2.bg--dark:not(.nav-bar):not(.bar) a:not(.btn) {
 }
 
 /* ABOUT PAGE */
-
-#about-hero {
-	padding-top: 0;
-}
-
-#about-hero .about-hero-img {
-	min-height: 530px;
-	background-size: cover;
-	border-radius: 0 0 200px 0;
-}
-
-#about-hero .about-hero-img::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(255, 255, 255, 0.3);
-	background: -moz-linear-gradient(
-		90deg,
-		rgba(255, 255, 255, 0.20211834733893552) 30%,
-		rgba(255, 255, 255, 0.4990371148459384) 100%
-	);
-	background: -webkit-linear-gradient(
-		90deg,
-		rgba(255, 255, 255, 0.20211834733893552) 30%,
-		rgba(255, 255, 255, 0.4990371148459384) 100%
-	);
-	background: linear-gradient(
-		90deg,
-		rgba(255, 255, 255, 0.20211834733893552) 30%,
-		rgba(255, 255, 255, 0.4990371148459384) 100%
-	);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
-}
-
-#about-hero h3 {
-	margin-top: 180px;
-	font-size: 18px;
-	text-transform: uppercase;
-}
-
-#about-hero h3::after {
-	content: '';
-	height: 3px;
-	width: 40px;
-	margin-top: 15px;
-	background: rgb(155, 12, 67);
-	display: block;
-}
-
-#about-hero h1 {
-	font-size: 60px;
-	max-width: 700px;
-	margin-left: -80px;
-}
 
 #values h2 {
 	display: inline-block;
