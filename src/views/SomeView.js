@@ -14,7 +14,7 @@ function SomeView(props) {
 				<div className='container'>
 					<div className='row'>
 						<div className='col-sm-10 col-md-8'>
-							<h1>This is the view of {}</h1>
+							<h1>Some View</h1>
 							<p className='lead'>
 								Lorem ipsum dolor sit amet consectetur
 								adipisicing elit. Reiciendis ratione, esse
