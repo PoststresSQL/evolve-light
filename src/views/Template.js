@@ -7,7 +7,7 @@ function Template() {
 				<div className='background-image-holder'>
 					<img
 						alt='background'
-						src='/users/u143/143632/background-01-smr.jpg'
+						src='https://placehold.it/1920x1080'
 					/>
 				</div>
 				<div className='container pos-vertical-center'>
