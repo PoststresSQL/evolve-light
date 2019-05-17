@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.18",
+    "@fortawesome/free-regular-svg-icons": "^5.8.2",
     "@fortawesome/free-solid-svg-icons": "^5.8.2",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "bootstrap": "^4.3.1",
@@ -23,7 +24,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "postbuild": "react-snapshot"
+    "postbuild": "react-snapshot",
+    "makeview": "func() { cp ./src/views/Template.js ./src/views/\"$1\".js; }; func",
+    "makecomp": "func() { cp ./src/components/Template.js ./src/components/\"$1\".js; }; func"
   },
   "eslintConfig": {
     "extends": "react-app"
