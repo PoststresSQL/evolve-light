@@ -1,8 +1,7 @@
 import Home from './views/Home'
-import Dropdown1 from './views/Dropdown1'
-import Dropdown2 from './views/Dropdown2'
-import Dropdown3 from './views/Dropdown3'
 import About from './views/About'
+import SomeView from './views/SomeView'
+import Template from './views/Template'
 
 // Define routes(pages)
 export const routes = [
@@ -18,23 +17,17 @@ export const routes = [
 		component: About
 	},
 	{
-		title: 'Dropdown Link',
-		path: '/dropdown/:service',
+		title: 'Dropdown Menu',
 		subroutes: [
 			{
-				title: 'Dropdown 1',
-				path: '/dropdown/dropdown-1',
-				component: Dropdown1
+				title: 'Some View',
+				path: '/dropdown-menu/some-view',
+				component: SomeView
 			},
 			{
-				title: 'Dropdown 2',
-				path: '/dropdown/dropdown-2',
-				component: Dropdown2
-			},
-			{
-				title: 'Dropdown 3',
-				path: '/dropdown/dropdown-3',
-				component: Dropdown3
+				title: 'Template',
+				path: '/dropdown-menu/template',
+				component: Template
 			}
 		]
 	}
