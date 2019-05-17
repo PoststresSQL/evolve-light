@@ -1,7 +1,6 @@
 import React from 'react'
 
-function SomeView(props) {
-	console.log(props)
+function PurchaseResidential(props) {
 	return (
 		<div className='main-container'>
 			<section className='text-center imagebg' data-overlay='4'>
@@ -14,7 +13,7 @@ function SomeView(props) {
 				<div className='container'>
 					<div className='row'>
 						<div className='col-sm-10 col-md-8'>
-							<h1>Some View</h1>
+							<h1>This is the view of {}</h1>
 							<p className='lead'>
 								Lorem ipsum dolor sit amet consectetur
 								adipisicing elit. Reiciendis ratione, esse
@@ -30,4 +29,4 @@ function SomeView(props) {
 	)
 }
 
-export default SomeView
+export default PurchaseResidential

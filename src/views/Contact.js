@@ -1,7 +1,6 @@
 import React from 'react'
-import { FontAwesomeIcon as FAI } from '@fortawesome/react-fontawesome'
 
-function About() {
+function Contact() {
 	return (
 		<div className='main-container'>
 			<section className='cover imagebg height-auto' data-overlay='4'>
@@ -13,9 +12,8 @@ function About() {
 				</div>
 				<div className='container pos-vertical-center'>
 					<div className='row'>
-						<div className='col-sm-10 col-md-8'>
-							<h1>About View</h1>
-
+						<div className='col-sm-8 col-md-7'>
+							<h1>Contact Us</h1>
 							<p className='lead'>
 								Lorem ipsum dolor sit amet consectetur
 								adipisicing elit. Maxime dolorum suscipit
@@ -30,4 +28,4 @@ function About() {
 	)
 }
 
-export default About
+export default Contact

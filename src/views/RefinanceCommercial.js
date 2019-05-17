@@ -1,26 +1,25 @@
 import React from 'react'
-import { FontAwesomeIcon as FAI } from '@fortawesome/react-fontawesome'
 
-function About() {
+function RefinanceCommercial(props) {
 	return (
 		<div className='main-container'>
-			<section className='cover imagebg height-auto' data-overlay='4'>
+			<section className='text-center imagebg' data-overlay='4'>
 				<div className='background-image-holder'>
 					<img
 						alt='background'
 						src='https://placehold.it/1920x1080'
 					/>
 				</div>
-				<div className='container pos-vertical-center'>
+				<div className='container'>
 					<div className='row'>
 						<div className='col-sm-10 col-md-8'>
-							<h1>About View</h1>
-
+							<h1>This is the view of {}</h1>
 							<p className='lead'>
 								Lorem ipsum dolor sit amet consectetur
-								adipisicing elit. Maxime dolorum suscipit
-								asperiores placeat accusantium rerum animi
-								consequuntur sed optio inventore!
+								adipisicing elit. Reiciendis ratione, esse
+								recusandae laboriosam, eum quisquam vero, quo
+								qui velit ex aut quasi laborum quibusdam
+								voluptas illo. Veritatis eos tempore aspernatur?
 							</p>
 						</div>
 					</div>
@@ -30,4 +29,4 @@ function About() {
 	)
 }
 
-export default About
+export default RefinanceCommercial
