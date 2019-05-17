@@ -66,7 +66,7 @@ class RefinanceCalculator extends React.Component {
 	render() {
 		return (
 			<div className='main-container'>
-				<section className='cover imagebg height-auto' data-overlay='4'>
+				{/* <section className='cover imagebg height-auto' data-overlay='4'>
 					<div className='background-image-holder'>
 						<img
 							alt='background'
@@ -76,7 +76,7 @@ class RefinanceCalculator extends React.Component {
 					<div className='container pos-vertical-center'>
 						<div className='row'>
 							<div className='col-sm-8 col-md-7'>
-								<h1>Construction Calculator</h1>
+								<h1>Refinance Calculator</h1>
 								<p className='lead'>
 									Lorem ipsum dolor sit amet consectetur
 									adipisicing elit. Maxime dolorum suscipit
@@ -86,16 +86,16 @@ class RefinanceCalculator extends React.Component {
 							</div>
 						</div>
 					</div>
-				</section>
+				</section> */}
 
 				<section>
 					<div className='container'>
 						<div className='row'>
 							<div className='col-md-4'>
-								<h1>Construction</h1>
+								<h1>Refinance</h1>
 								<h4>
 									Congratulations on taking the first step to
-									building your new home!
+									refinancing your new home!
 								</h4>
 								<p>
 									Fill out the form on this page to let us

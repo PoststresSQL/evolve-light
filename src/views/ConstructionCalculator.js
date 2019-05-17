@@ -66,7 +66,7 @@ class ConstructionCalculator extends React.Component {
 	render() {
 		return (
 			<div className='main-container'>
-				<section className='cover imagebg height-auto' data-overlay='4'>
+				{/* <section className='cover imagebg height-auto' data-overlay='4'>
 					<div className='background-image-holder'>
 						<img
 							alt='background'
@@ -86,7 +86,7 @@ class ConstructionCalculator extends React.Component {
 							</div>
 						</div>
 					</div>
-				</section>
+				</section> */}
 
 				<section>
 					<div className='container'>
