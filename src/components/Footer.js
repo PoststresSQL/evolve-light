@@ -58,10 +58,10 @@ function Footer() {
 							<span className='type--fine-print'>
 								© <span className='update-year' /> ((company))
 							</span>
-							<Link className='type--fine-print' href='#'>
+							<Link to='/' className='type--fine-print' href='#'>
 								Privacy Policy
 							</Link>
-							<Link className='type--fine-print' href='#'>
+							<Link to='/' className='type--fine-print' href='#'>
 								Legal
 							</Link>
 						</div>
@@ -74,7 +74,7 @@ function Footer() {
 										rel='noopener noreferrer'>
 										<FAI
 											icon={['fab', 'twitter']}
-											size='xl'
+											size='lg'
 										/>
 									</a>
 								</li>
@@ -85,7 +85,7 @@ function Footer() {
 										rel='noopener noreferrer'>
 										<FAI
 											icon={['fab', 'facebook']}
-											size='xl'
+											size='lg'
 										/>
 									</a>
 								</li>
@@ -96,7 +96,7 @@ function Footer() {
 										rel='noopener noreferrer'>
 										<FAI
 											icon={['fab', 'instagram']}
-											size='xl'
+											size='lg'
 										/>
 									</a>
 								</li>

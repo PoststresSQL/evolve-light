@@ -418,6 +418,22 @@ footer.footer-2.bg--dark:not(.nav-bar):not(.bar) a:not(.btn) {
 	transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.testimonials .card {
+	border-radius: 0;
+	width: 90%;
+}
+
+.testimonials .card::before {
+	background: var(--secondary);
+	bottom: -1px;
+	content: '';
+	left: 0;
+	position: absolute;
+	right: 90%;
+	top: -1px;
+	transform: translateX(-100%);
+}
+
 /* ABOUT PAGE */
 
 #values h2 {
@@ -441,4 +457,175 @@ footer.footer-2.bg--dark:not(.nav-bar):not(.bar) a:not(.btn) {
 	border: solid 1px #ddd;
 	margin-top: -55px;
 	border-radius: 10px;
+}
+
+/* CUSTOM FORM */
+.form-wrapper {
+	border: solid 1px #eee;
+	border-radius: 8px;
+	padding: 30px;
+}
+
+.form-wrapper .progress-bar {
+	background: var(--primary);
+}
+
+.form-wrapper .tab {
+	animation: fadeIn 0.5s ease forwards 1;
+	display: none;
+	opacity: 0;
+	transform: translateX(10px);
+}
+
+.form-wrapper .tab.active {
+	display: block;
+}
+
+.form-wrapper h2 {
+	border-bottom: solid 1px #eee;
+	color: var(--light-black);
+	font-size: 23px;
+	margin-bottom: 15px;
+	margin-top: 70px;
+	padding-bottom: 15px;
+}
+
+.form-wrapper li {
+	margin-bottom: 20px;
+}
+
+.form-wrapper label {
+	font-size: 16px;
+	font-weight: 700;
+	margin-bottom: 8px;
+}
+
+.form-wrapper input[type='submit'] {
+	cursor: pointer;
+	width: auto;
+	padding: 20px 50px;
+	height: auto;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1em;
+	background: #efad01;
+	box-shadow: 0 8px 20px -2px rgba(0, 0, 0, 0.3);
+}
+
+.form-wrapper input[type='submit']:hover {
+	background: #f2bd33;
+	transform: translateY(-5px);
+}
+
+.form-wrapper .form-disclaimer {
+	font-style: italic;
+	font-size: 14px;
+	color: #888;
+	max-width: 550px;
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.form-wrapper .form-disclaimer img {
+	float: left;
+	margin-right: 10px;
+	transform: rotate(-13deg);
+	max-height: 50px;
+}
+
+/* Style checkboxes like checkboxes */
+
+.form-wrapper .checkboxDiv input {
+	width: auto;
+	height: auto;
+	appearance: checkbox;
+	-webkit-appearance: checkbox;
+	-moz-appearance: checkbox;
+}
+
+.form-wrapper .checkboxDiv input,
+.form-wrapper .checkboxDiv label {
+	cursor: pointer;
+}
+
+/* Add asterisk to required fields */
+
+.form-wrapper .required-field label::after {
+	content: '*';
+	color: red;
+}
+
+.form-wrapper input {
+	padding: 10px;
+	width: 100%;
+	font-size: 17px;
+	border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+.form-wrapper input.invalid {
+	border-color: #ff0000;
+}
+
+.form-wrapper button {
+	background-color: #efad01;
+	color: #ffffff;
+	border: none;
+	padding: 10px 25px;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 4px;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+	transition: all ease 0.3s;
+}
+
+.form-wrapper button:hover {
+	opacity: 0.8;
+}
+
+.form-wrapper #prevBtn {
+	background-color: #bbbbbb;
+}
+
+.form-wrapper .tab {
+	animation: fadeIn 0.5s ease forwards 1;
+	opacity: 0;
+	transform: translateX(10px);
+}
+
+/* --- Media Queries --- */
+
+@media only screen and (max-width: 767px) {
+	.form-wrapper .hide-mobile {
+		display: none !important;
+	}
+
+	.form-wrapper p.lead {
+		font-size: 15px;
+		line-height: 1.8em;
+	}
+
+	.form-wrapper h1,
+	.form-wrapper h2 {
+		line-height: 1.2em;
+	}
+
+	.form-wrapper .tabs-container.tabs--vertical .tabs,
+	.form-wrapper .tabs-container.tabs--vertical .tabs-content {
+		width: 100%;
+		float: none;
+	}
+}
+
+/* --- Keyframes --- */
+
+@keyframes fadeIn {
+	100% {
+		opacity: 1;
+		transform: none;
+	}
 }
