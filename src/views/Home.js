@@ -18,20 +18,17 @@ function Home(props) {
 						<div className='col-sm-10 col-md-8'>
 							<h1>Home View</h1>
 							<p className='lead'>
-								At Positive Lending, we work with many home
-								buyers who are looking to purchase in the
-								Sacramento, CA area. When working together, we
-								can help you finance your dream home.
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptatum sequi distinctio magnam temporibus laborum facilis itaque possimus assumenda aliquam!
 							</p>
 							<a
 								className='btn btn--primary type--uppercase'
 								href='/purchase'>
-								<span className='btn__text'>Purchase</span>
+								<span className='btn__text'>Button Primary</span>
 							</a>
 							<a
-								className='btn btn--primary type--uppercase'
+								className='btn type--uppercase'
 								href='/refinance'>
-								<span className='btn__text'>Refinance</span>
+								<span className='btn__text'>Button</span>
 							</a>
 						</div>
 					</div>

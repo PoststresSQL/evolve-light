@@ -2,10 +2,10 @@
 :root {
 	--dark-black: rgb(18, 18, 18);
 	--light-black: rgb(74, 74, 74);
-	--smokewhite: rgb(245, 245, 245);
-	--primary: rgb(155, 12, 67);
-	--secondary: rgb(4, 42, 56);
-	--whitecrest: rgb(247, 245, 235);
+	--light-gray: rgb(228, 228, 228);
+	--primary: rgb(144, 151, 253);
+	--secondary: rgb(196, 199, 206);
+	--offwhite: rgb(249, 250, 245);
 	--shadow: rgba(0, 0, 0, 0.2);
 }
 
@@ -40,13 +40,13 @@
 }
 
 .btn:hover {
-	border: 1px solid var((--secondary));
+	border: 1px solid var(--secondary);
 	text-decoration: none;
 	transition: color 0.2s, transform 0.6s, border 1s;
 }
 
 .btn .btn__text {
-	color: var(--smokewhite);
+	color: var(--light-gray);
 	font-size: 1rem;
 	position: relative;
 	transition: color 0.2s;
@@ -58,7 +58,7 @@
 }
 
 .btn:hover .btn__text {
-	color: var(--smokewhite) !important;
+	color: var(--primary) !important;
 	transition: color 0.2s, transform 0.6s, border 1s;
 }
 
@@ -66,7 +66,6 @@
 	content: '';
 	background: var(--secondary);
 	border-radius: 0.25rem;
-	color: var(--smokewhite);
 	display: inline-block;
 	height: calc(100% + 2px);
 	left: -1px;
@@ -87,7 +86,7 @@
 }
 
 .btn.btn--primary .btn__text {
-	color: rgb(245, 245, 245);
+	color: var(--light-gray);
 	transition: color 0.2s;
 }
 
@@ -119,40 +118,20 @@ section {
 	background: var(--primary);
 }
 
-.bg--primary {
-	color: var(--whitecrest);
-}
-
 .bg--secondary {
 	background: var(--secondary);
 }
 
-.bg--secondary * {
-	color: var(--smokewhite);
+.bg--dark * {
+	color: var(--offwhite);
 }
 
-.text__container--bright h1,
-.text__container--bright h2,
-.text__container--bright h3,
-.text__container--bright h4,
-.text__container--bright h5,
-.text__container--bright h6,
-.text__container--bright p {
+.bg--light * {
 	color: var(--light-black);
 }
 
-.text__container--dark h1,
-.text__container--dark h2,
-.text__container--dark h3,
-.text__container--dark h4,
-.text__container--dark h5,
-.text__container--dark h6,
-.text__container--dark p {
-	color: var(--smokewhite);
-}
-
 .el--sticky .btn.btn--primary .btn__text {
-	color: var(--smokewhite) !important;
+	color: var(--light-gray) !important;
 }
 
 /* FORMATTING
@@ -184,7 +163,7 @@ __________________________*/
 }
 
 .el--sticky {
-	background: var(--smokewhite);
+	background: var(--light-gray);
 	box-shadow: 0 2px 1em var(--shadow);
 	left: 0;
 	position: fixed;
@@ -207,7 +186,7 @@ __________________________*/
 .fas,
 .far,
 .fab {
-	color: var(--smokewhite);
+	color: var(--light-gray);
 	margin-bottom: 1rem;
 }
 
@@ -270,7 +249,7 @@ __________________________*/
 }
 
 .text__container--bright {
-	background: var(--smokewhite);
+	background: var(--light-gray);
 }
 
 .text__container--dark {
@@ -379,7 +358,7 @@ footer.footer-2.bg--dark {
 
 footer.footer-2.bg--dark:not(.nav-bar):not(.bar) h6,
 footer.footer-2.bg--dark:not(.nav-bar):not(.bar) a:not(.btn) {
-	color: var(--smokewhite);
+	color: var(--light-gray);
 }
 
 #footer__bottom {
@@ -394,7 +373,7 @@ footer.footer-2.bg--dark:not(.nav-bar):not(.bar) a:not(.btn) {
 }
 
 #footer__bottom .nav-item .nav-link {
-	color: var(--smokewhite);
+	color: var(--light-gray);
 }
 
 #footer__bottom .social-nav .nav-item {
