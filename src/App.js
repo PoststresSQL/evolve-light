@@ -21,7 +21,7 @@ import {
 	faTwitter,
 	faFacebook,
 	faInstagram
-} from '@fortawesome/fontawesome-free-brands'
+} from '@fortawesome/free-brands-svg-icons'
 
 library.add(
 	faEnvelope,
