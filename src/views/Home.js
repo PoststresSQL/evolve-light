@@ -1,5 +1,4 @@
 import React from 'react'
-import { FontAwesomeIcon as FAI } from '@fortawesome/react-fontawesome'
 
 function Home(props) {
 	return (
