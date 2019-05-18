@@ -5,8 +5,11 @@ This will be a boiler plate for full-time/contracted workers at Ignited Local ca
 ## Getting Started
 
 - Open Terminal/Bash and clone the repo `git clone https://github.com/PoststresSQL/il-dev-env.git {NAME_OF_YOUR_PROJECT}`
+- Remove the git remote `git remote remove origin`
+- Add a remote to your project by copying the https link from the github repo. `git remote add origin {PASTE_YOUR_HTTPS_ADDRESS_HERE}`
+- Confirm the remote by running `git remote -v` and make sure the remote points to your project repository
 - Install Deps `yarn install` or `npm install`
-- Start up the dev server `yarn start` or `npm start`\
+- Start up the dev server `yarn start` or `npm start`
 - CRA should open up the local site in your default browser; if it doesn't go to `localhost:3000`
 - Build out your site using Bootstrap classes, premade components, and your own code
 - Commit frequently! Try to make each commit Atomic and be clear with your commit messages.
