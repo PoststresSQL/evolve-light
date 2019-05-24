@@ -11,27 +11,11 @@ import './App.css'
 
 // FontAwesome setup
 import { library } from '@fortawesome/fontawesome-svg-core'
-import {
-	faEnvelope,
-	faHeart,
-	faCampground
-} from '@fortawesome/free-solid-svg-icons'
-import { faCheckCircle } from '@fortawesome/free-regular-svg-icons'
-import {
-	faTwitter,
-	faFacebook,
-	faInstagram
-} from '@fortawesome/free-brands-svg-icons'
+import {} from '@fortawesome/free-solid-svg-icons'
+import {} from '@fortawesome/free-regular-svg-icons'
+import {} from '@fortawesome/free-brands-svg-icons'
 
-library.add(
-	faEnvelope,
-	faHeart,
-	faCampground,
-	faTwitter,
-	faFacebook,
-	faInstagram,
-	faCheckCircle
-)
+library.add()
 
 function App() {
 	return (
