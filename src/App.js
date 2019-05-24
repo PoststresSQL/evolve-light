@@ -26,7 +26,7 @@ function App() {
 	return (
 		<div className='App'>
 			<Router>
-				<Helmet title='Eagle Mortgage' />
+				<Helmet title='Stack Dev Env' />
 				<NavBar routes={routes} />
 				{routes.map((route, i) => {
 					if (route.hasOwnProperty('component')) {
