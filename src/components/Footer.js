@@ -73,7 +73,7 @@ function Footer() {
 										target='_blank'
 										rel='noopener noreferrer'>
 										<FAI
-											icon={['fab', 'twitter']}
+											icon={['fab', 'twitter-square']}
 											size='lg'
 										/>
 									</a>
@@ -84,7 +84,7 @@ function Footer() {
 										target='_blank'
 										rel='noopener noreferrer'>
 										<FAI
-											icon={['fab', 'facebook']}
+											icon={['fab', 'facebook-square']}
 											size='lg'
 										/>
 									</a>
