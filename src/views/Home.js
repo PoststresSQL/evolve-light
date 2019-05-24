@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from '../components/Atoms/Button'
 
-function Home(props) {
+function Home() {
 	return (
 		<div className='main-container'>
 			<section
