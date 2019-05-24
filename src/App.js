@@ -7,15 +7,20 @@ import Footer from './components/Footer'
 // Stylesheets
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './theme.css'
+import './stack-interface.css'
 import './App.css'
 
 // FontAwesome setup
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {} from '@fortawesome/free-solid-svg-icons'
 import {} from '@fortawesome/free-regular-svg-icons'
-import {} from '@fortawesome/free-brands-svg-icons'
+import {
+	faInstagram,
+	faFacebookSquare,
+	faTwitterSquare
+} from '@fortawesome/free-brands-svg-icons'
 
-library.add()
+library.add(faInstagram, faFacebookSquare, faTwitterSquare)
 
 function App() {
 	return (
