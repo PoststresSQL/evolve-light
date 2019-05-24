@@ -508,7 +508,6 @@ footer.footer-2.bg--dark:not(.nav-bar):not(.bar) a:not(.btn) {
 .carousel-cell {
 	background: var(--light-gray);
 	border-radius: 0.25rem;
-	height: 300px;
 	margin-right: 0.75rem;
 	width: 66%;
 }
