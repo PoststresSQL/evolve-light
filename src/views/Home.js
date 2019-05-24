@@ -1,11 +1,12 @@
 import React from 'react'
+import Button from '../components/Atoms/Button'
 
 function Home(props) {
 	return (
 		<div className='main-container'>
 			<section
 				id='home-hero'
-				className='cover imagebg height-auto'
+				className='cover imagebg height-80'
 				data-overlay='4'>
 				<div className='background-image-holder'>
 					<img
@@ -18,18 +19,15 @@ function Home(props) {
 						<div className='col-sm-10 col-md-8'>
 							<h1>Home View</h1>
 							<p className='lead'>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptatum sequi distinctio magnam temporibus laborum facilis itaque possimus assumenda aliquam!
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Nam voluptatum sequi
+								distinctio magnam temporibus laborum facilis
+								itaque possimus assumenda aliquam!
 							</p>
-							<a
-								className='btn btn--primary type--uppercase'
-								href='/purchase'>
-								<span className='btn__text'>Button Primary</span>
-							</a>
-							<a
-								className='btn type--uppercase'
-								href='/refinance'>
-								<span className='btn__text'>Button</span>
-							</a>
+							<Button pathName='/' primary>
+								Primary Button
+							</Button>
+							<Button pathName='/'>Button</Button>
 						</div>
 					</div>
 				</div>
