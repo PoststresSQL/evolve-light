@@ -1,7 +1,7 @@
 import React from 'react'
 import Slider from '../Atoms/Slider'
 
-function AccordionSlider1({ images, switched, children }) {
+function AccordionSlider2({ images, switched, children }) {
 	return (
 		<section
 			className={
@@ -10,7 +10,7 @@ function AccordionSlider1({ images, switched, children }) {
 			<div className='container'>
 				<div className='row'>
 					<div className='col-sm-6 switchable__text'>
-						<ul className='accordion accordion-1'>{children}</ul>
+						<ul className='accordion accordion-2'>{children}</ul>
 					</div>
 					<div className='col-md-6 col-sm-6'>
 						<Slider images={images} />
@@ -21,4 +21,4 @@ function AccordionSlider1({ images, switched, children }) {
 	)
 }
 
-export default AccordionSlider1
+export default AccordionSlider2

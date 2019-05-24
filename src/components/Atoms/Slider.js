@@ -25,7 +25,7 @@ class Slider extends React.Component {
 
 	render() {
 		return (
-			<div class='main-carousel'>
+			<div className='main-carousel'>
 				{this.props.images.map((image, i) => {
 					return <SliderItem image={image} key={i} />
 				})}
