@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { routes } from './routes'
 import Helmet from 'react-helmet'
 import NavBar from './components/Navigations/NavBar'
+import MobileNav from './components/Navigations/MobileNav'
 import Footer from './components/Footer'
 // Stylesheets
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -12,7 +13,7 @@ import './App.css'
 
 // FontAwesome setup
 import { library } from '@fortawesome/fontawesome-svg-core'
-import {} from '@fortawesome/free-solid-svg-icons'
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
 import {} from '@fortawesome/free-regular-svg-icons'
 import {
 	faInstagram,
@@ -20,7 +21,7 @@ import {
 	faTwitterSquare
 } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faInstagram, faFacebookSquare, faTwitterSquare)
+library.add(faInstagram, faFacebookSquare, faTwitterSquare, faTimes)
 
 function App() {
 	return (
@@ -28,6 +29,7 @@ function App() {
 			<Router>
 				<Helmet title='Stack Dev Env' />
 				<NavBar routes={routes} />
+				<MobileNav routes={routes} />
 				{routes.map((route, i) => {
 					if (route.hasOwnProperty('component')) {
 						return <Route key={i} {...route} />
