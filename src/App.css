@@ -120,6 +120,101 @@ __________________________*/
 	box-sizing: border-box;
 }
 
+*:focus {
+	outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Source Sans Pro', 'Poppins', 'Helvetica Neue', Helvetica,
+		sans-serif;
+	font-weight: 400;
+}
+
+h1,
+.h1 {
+	font-size: 3.1428571429rem;
+	line-height: 1.1;
+}
+
+h1.big,
+.h1.big {
+	font-size: 3.4285714286rem;
+	line-height: 1.2;
+}
+
+h2,
+.h2 {
+	font-size: 2.5714285714rem;
+	line-height: 1.1;
+}
+
+h2.big,
+.h2.big {
+	font-size: 3.2142857143rem;
+	line-height: 1.2;
+}
+
+h3,
+.h3 {
+	font-size: 2rem;
+	line-height: 1.1;
+}
+
+h3.big,
+.h3.big {
+	font-size: 2.5rem;
+	line-height: 1.2;
+}
+
+h4,
+.h4 {
+	font-size: 1.4285714286rem;
+	line-height: 1.1;
+}
+
+h4.big,
+.h4.big {
+	font-size: 2rem;
+	line-height: 1.2;
+}
+
+p {
+	font-family: 'Times New Roman', Georgia, Times, serif;
+	font-size: 1.1428571429rem;
+	font-weight: 400;
+	line-height: 1.6;
+}
+
+p.big-paragraph {
+	font-size: 1.7142857143rem;
+	line-height: 1.8;
+}
+
+.extra-light {
+	font-weight: 200;
+}
+
+.light {
+	font-weight: 300;
+}
+
+.semi-bold {
+	font-weight: 600;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.extra-bold {
+	font-weight: 900;
+}
+
 .fas,
 .far,
 .fab {
