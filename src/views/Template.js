@@ -1,16 +1,11 @@
 import React from 'react'
+import Section from '../components/Section'
 
 function Template() {
 	return (
 		<div className='main-container'>
-			<section className='cover imagebg height-auto' data-overlay='4'>
-				<div className='background-image-holder'>
-					<img
-						alt='background'
-						src='https://placehold.it/1920x1080'
-					/>
-				</div>
-				<div className='container pos-vertical-center'>
+			<Section className='height-auto'>
+				<div className='container'>
 					<div className='row'>
 						<div className='col-sm-8 col-md-7'>
 							<h1>Template</h1>
@@ -23,7 +18,7 @@ function Template() {
 						</div>
 					</div>
 				</div>
-			</section>
+			</Section>
 		</div>
 	)
 }

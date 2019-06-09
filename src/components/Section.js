@@ -1,10 +1,8 @@
 import React from 'react'
 
-function Section({ id, classes, children }) {
+function Section({ id, className, children }) {
 	return (
-		<section
-			id={`${id}__section`}
-			className={classes ? classes.join(' ') : ''}>
+		<section id={id} className={className}>
 			<div className='container'>
 				<div className='row'>{children}</div>
 			</div>

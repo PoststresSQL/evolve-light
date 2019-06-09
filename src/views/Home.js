@@ -1,19 +1,11 @@
 import React from 'react'
 import Button from '../components/Atoms/Button'
+import Section from '../components/Section'
 
 function Home() {
 	return (
 		<div className='main-container'>
-			<section
-				id='home-hero'
-				className='cover imagebg height-80'
-				data-overlay='4'>
-				<div className='background-image-holder'>
-					<img
-						alt='background'
-						src='https://placehold.it/1920x1080'
-					/>
-				</div>
+			<Section id='home-hero' className='height-80'>
 				<div className='container pos-vertical-center'>
 					<div className='row'>
 						<div className='col-sm-10 col-md-8'>
@@ -31,7 +23,7 @@ function Home() {
 						</div>
 					</div>
 				</div>
-			</section>
+			</Section>
 		</div>
 	)
 }

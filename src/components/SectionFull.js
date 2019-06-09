@@ -1,10 +1,8 @@
 import React from 'react'
 
-function SectionFull({ id, classes, children }) {
+function SectionFull({ id, className, children }) {
 	return (
-		<section
-			id={`${id}__section`}
-			className={classes ? classes.join(' ') : ''}>
+		<section id={id} className={className}>
 			<div className='container-fluid'>
 				<div className='row'>{children}</div>
 			</div>
