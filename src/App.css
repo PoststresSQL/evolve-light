@@ -178,7 +178,7 @@ p {
 	line-height: 1.6;
 }
 
-p.big-paragraph {
+p.big {
 	font-size: 1.7142857143rem;
 	line-height: 1.8;
 }
@@ -245,23 +245,6 @@ __________________________*/
 	display: block;
 	opacity: 1;
 	pointer-events: auto;
-}
-
-.bar {
-	padding: 0;
-}
-
-.bar .logo {
-	max-height: 4em;
-	top: 0;
-}
-
-.bar .col-md-2 .bar__module {
-	padding: 1em 0;
-}
-
-.bar .col-md-10 .bar__module .menu-horizontal {
-	padding: 1.85714286em 0;
 }
 
 /* HEADER SECTION
