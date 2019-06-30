@@ -1,11 +1,12 @@
 /* VARIBALES */
 :root {
+	--body: rgb(245, 245, 245);
 	--dark-black: rgb(18, 18, 18);
 	--light-black: rgb(74, 74, 74);
 	--light-gray: rgb(228, 228, 228);
-	--action: rgb(243, 101, 136);
-	--primary: rgb(144, 151, 253);
-	--secondary: rgb(196, 199, 206);
+	--action: rgb(208, 172, 73);
+	--primary: rgb(235, 157, 169);
+	--secondary: rgb(95, 94, 137);
 	--offwhite: rgb(249, 250, 245);
 	--shadow: rgba(0, 0, 0, 0.2);
 }
@@ -21,7 +22,6 @@ html {
 	border-radius: 0;
 	display: inline-block;
 	min-width: 6rem;
-	opacity: 0.6;
 	overflow: hidden;
 	padding: 0.8rem 1.6rem;
 	position: relative;
@@ -41,7 +41,6 @@ html {
 	color: var(--action);
 	font-size: 1.4rem;
 	line-height: 2.4rem;
-	opacity: 0.6;
 }
 
 .btn.btn-lg .btn__text {
@@ -74,6 +73,10 @@ html {
 
 /* COLORS 
 __________________________*/
+body {
+	background-color: var(--body);
+}
+
 h1,
 h2,
 h3,
@@ -91,20 +94,16 @@ section {
 	padding: 7.5rem 0 !important;
 }
 
-.bg--primary {
-	background: var(--primary);
-}
-
-.bg--secondary {
-	background: var(--secondary);
-}
-
 .bg--dark * {
 	color: var(--offwhite);
 }
 
 .bg--light * {
 	color: var(--light-black);
+}
+
+.color--primary {
+	color: var(--primary) !important;
 }
 /* FORMATTING
 __________________________*/
@@ -125,7 +124,7 @@ h5,
 h6 {
 	font-family: 'Source Sans Pro', 'Poppins', 'Helvetica Neue', Helvetica,
 		sans-serif;
-	margin-bottom: 0 !important;
+	margin-bottom: 0.5rem !important;
 }
 
 h1,
@@ -137,7 +136,7 @@ h1,
 h1.big,
 .h1.big {
 	font-size: 5.6rem;
-	line-height: 1.45;
+	line-height: 1.3;
 }
 
 h2,
@@ -149,7 +148,7 @@ h2,
 h2.big,
 .h2.big {
 	font-size: 4.8rem;
-	line-height: 1.45;
+	line-height: 1.3;
 }
 
 h3,
@@ -161,7 +160,7 @@ h3,
 h3.big,
 .h3.big {
 	font-size: 4rem;
-	line-height: 1.45;
+	line-height: 1.3;
 }
 
 h4,
@@ -173,12 +172,15 @@ h4,
 h4.big,
 .h4.big {
 	font-size: 3.2rem;
-	line-height: 1.45;
+	line-height: 1.3;
 }
 
-a,
+a {
+	font-size: 1.4rem;
+}
+
 span {
-	font-size: 1.4rem !important;
+	font-size: inherit;
 }
 
 p {
@@ -231,12 +233,17 @@ p.big {
 }
 
 .box-shadow {
-	box-shadow: 0 0 1.5rem var(--shadow);
+	box-shadow: 0.3rem 0.6rem 0.9rem var(--shadow);
 	transition: all 0.3s;
 }
 
 /*  NAVIGATION SECTION
 __________________________*/
+.nav-container a,
+.nav-container span {
+	font-size: 1.4rem !important;
+}
+
 .dropdown:hover > .dropdown__trigger + .dropdown__container,
 .dropdown > .dropdown__trigger + .dropdown__container:hover {
 	display: block;
@@ -244,22 +251,12 @@ __________________________*/
 	pointer-events: auto;
 }
 
+.bar .logo {
+	max-height: 7.5rem;
+}
+
 /* HEADER SECTION
 __________________________*/
-
-/* SERVICES SECTION
-_________________________ */
-#services__section .card {
-	height: 480px;
-	position: relative;
-	width: 320px;
-}
-
-#services__section .card .card-title {
-	bottom: 2rem;
-	position: absolute;
-	width: 100%;
-}
 
 /* FOOTER
 __________________________*/
