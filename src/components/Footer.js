@@ -51,8 +51,10 @@ function Footer() {
 				<div className='container'>
 					<div className='row'>
 						<div className='col-sm-6 col-md-3 col-xs-6'>
-							<h6 className='type--uppercase'>Company</h6>
-							<ul className='list--hover'>
+							<h4 className='semi-bold type--uppercase'>
+								Company
+							</h4>
+							<ul className=''>
 								<li>
 									<Link to='#'>About Company</Link>
 								</li>
@@ -71,15 +73,19 @@ function Footer() {
 							</ul>
 						</div>
 						<div className='col-sm-6 col-md-3 col-xs-6'>
-							<h6 className='type--uppercase'>Contact Us</h6>
-							<ul className='list--hover'>
+							<h4 className='semi-bold type--uppercase'>
+								Contact Us
+							</h4>
+							<ul className=''>
 								<li>
-									<h5>((company))</h5>
+									<p>((company))</p>
 								</li>
 								<li>
-									((address))
-									<br />
-									((citycommastate)) ((zipcode))
+									<a href='/'>
+										((address))
+										<br />
+										((citycommastate)) ((zipcode))
+									</a>
 								</li>
 								<li>
 									<a href='tel:((phone))'>((phone))</a>
