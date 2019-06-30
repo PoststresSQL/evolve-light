@@ -22,7 +22,7 @@ class NavBar extends React.Component {
 				<div className='bar bar--sm visible-xs'>
 					<div className='container'>
 						<div className='row'>
-							<div className='col-xs-3 col-sm-2'>
+							<div className='col-3 col-sm-2'>
 								<a href='/'>
 									<img
 										className='logo logo-dark'
@@ -36,7 +36,7 @@ class NavBar extends React.Component {
 									/>
 								</a>
 							</div>
-							<div className='col-xs-9 col-sm-10 text-right'>
+							<div className='col-9 col-sm-10 text-right align-self-center'>
 								<span
 									className='hamburger-toggle'
 									data-toggle-class='#menu1;hidden-xs hidden-sm'
@@ -67,7 +67,7 @@ class NavBar extends React.Component {
 								</div>
 							</div>
 
-							<div className='col-md-10 col-sm-9 text-right text-left-sm text-left xs'>
+							<div className='col-md-10 col-sm-9 text-right align-self-center'>
 								<div className='bar__module'>
 									<ul className='menu-horizontal text-left'>
 										{this.state.routes.map((route, i) => {
