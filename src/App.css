@@ -3,10 +3,15 @@
 	--dark-black: rgb(18, 18, 18);
 	--light-black: rgb(74, 74, 74);
 	--light-gray: rgb(228, 228, 228);
+	--action: rgb(243, 101, 136);
 	--primary: rgb(144, 151, 253);
 	--secondary: rgb(196, 199, 206);
 	--offwhite: rgb(249, 250, 245);
 	--shadow: rgba(0, 0, 0, 0.2);
+}
+
+html {
+	font-size: 62.5%;
 }
 
 /* BUTTON UPDATED STYLES */
@@ -83,7 +88,7 @@ p {
 }
 
 section {
-	background: white;
+	padding: 7.5rem 0 !important;
 }
 
 .bg--primary {
@@ -120,65 +125,71 @@ h5,
 h6 {
 	font-family: 'Source Sans Pro', 'Poppins', 'Helvetica Neue', Helvetica,
 		sans-serif;
+	margin-bottom: 0 !important;
 }
 
 h1,
 .h1 {
-	font-size: 3.1428571429rem;
-	line-height: 1.1;
+	font-size: 4.4rem;
+	line-height: 1.45;
 }
 
 h1.big,
 .h1.big {
-	font-size: 3.4285714286rem;
-	line-height: 1.2;
+	font-size: 5.6rem;
+	line-height: 1.45;
 }
 
 h2,
 .h2 {
-	font-size: 2.5714285714rem;
-	line-height: 1.1;
+	font-size: 3.6rem;
+	line-height: 1.45;
 }
 
 h2.big,
 .h2.big {
-	font-size: 3.2142857143rem;
-	line-height: 1.2;
+	font-size: 4.8rem;
+	line-height: 1.45;
 }
 
 h3,
 .h3 {
-	font-size: 2rem;
-	line-height: 1.1;
+	font-size: 2.8rem;
+	line-height: 1.45;
 }
 
 h3.big,
 .h3.big {
-	font-size: 2.5rem;
-	line-height: 1.2;
+	font-size: 4rem;
+	line-height: 1.45;
 }
 
 h4,
 .h4 {
-	font-size: 1.4285714286rem;
-	line-height: 1.1;
+	font-size: 2rem;
+	line-height: 1.45;
 }
 
 h4.big,
 .h4.big {
-	font-size: 2rem;
-	line-height: 1.2;
+	font-size: 3.2rem;
+	line-height: 1.45;
+}
+
+a,
+span {
+	font-size: 1.4rem !important;
 }
 
 p {
 	font-family: 'Times New Roman', Georgia, Times, serif;
-	font-size: 1.1428571429rem;
-	line-height: 1.6;
+	font-size: 1.6rem;
+	line-height: 1.45;
 }
 
 p.big {
-	font-size: 1.7142857143rem;
-	line-height: 1.8;
+	font-size: 2.4rem;
+	line-height: 1.45;
 }
 
 .extra-light {
@@ -201,39 +212,27 @@ p.big {
 	font-weight: 900;
 }
 
-.fas,
-.far,
-.fab {
-	color: var(--light-gray);
-	margin-bottom: 1rem;
+.accordion li.active .accordion__content {
+	max-height: 550px;
 }
 
-.grid {
-	display: grid;
+.el--vertical-center {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .pos--relative {
-	height: 100%;
 	position: relative;
 }
 
 .round-corners {
-	border-radius: 0.25rem;
+	border-radius: 0.4rem;
 }
 
-.sticky-image {
-	bottom: 2rem;
-	position: sticky;
-	position: -webkit-sticky;
-	top: 2rem;
-}
-
-.text__container--bright {
-	background: var(--light-gray);
-}
-
-.text__container--dark {
-	background: var(--dark-black);
+.box-shadow {
+	box-shadow: 0 0 1.5rem var(--shadow);
+	transition: all 0.3s;
 }
 
 /*  NAVIGATION SECTION
@@ -248,76 +247,93 @@ __________________________*/
 /* HEADER SECTION
 __________________________*/
 
-#home-hero .background-image-holder {
-	background-attachment: scroll;
-	background-clip: border-box;
-	background-color: rgba(0, 0, 0, 0);
-	background-image: url('https://placehold.it/1920x1080');
-	background-origin: padding-box;
-	background-position: initial;
-	background-repeat: repeat;
-	background-size: auto;
-	opacity: 1;
+/* SERVICES SECTION
+_________________________ */
+#services__section .card {
+	height: 480px;
+	position: relative;
+	width: 320px;
 }
 
-.background-image-holder::before {
-	background: var(--shadow);
-	bottom: 0;
-	content: '';
-	left: 0;
+#services__section .card .card-title {
+	bottom: 2rem;
 	position: absolute;
-	right: 0;
-	top: 0;
-}
-
-.cover-features.space--lg {
-	max-height: 720px;
-	padding-bottom: 0;
-}
-
-.cover-features .row:nth-child(2) {
-	margin-top: 0;
-}
-
-[data-scrim-bottom]:before {
-	background: none;
-}
-
-img.logo {
-	box-shadow: none;
+	width: 100%;
 }
 
 /* FOOTER
 __________________________*/
 
-footer.footer-2.bg--dark {
-	background: var(--secondary);
+/* TITLE HR BAR STYLES
+_________________________ */
+hr {
+	background-color: var(--action) !important;
+	content: '';
+	display: block;
+	height: 0.4rem;
+	margin: 2.5rem 0 3.5rem 0;
+	opacity: 1 !important;
+	width: 6rem;
 }
 
-footer.footer-2.bg--dark:not(.nav-bar):not(.bar) h6,
-footer.footer-2.bg--dark:not(.nav-bar):not(.bar) a:not(.btn) {
-	color: var(--light-gray);
+hr.center {
+	margin: 2rem auto 3rem auto;
 }
 
-#footer__bottom {
-	background: var(--light-black);
-	padding-bottom: 0;
-	padding-top: 0;
+.bg--dark hr {
+	background-color: var(--primary) !important;
 }
 
-#footer__bottom .col-md-3 {
-	padding-bottom: 7rem;
-	padding-top: 7rem;
+/* LANDSCAPING SECTION
+_________________________ */
+#landscape__section {
+	background: url('./assets/images/landscaping.jpg');
+	padding: 20rem 0 !important;
+	position: relative;
 }
 
-#footer__bottom .nav-item .nav-link {
-	color: var(--light-gray);
+#landscape__section.opacity-left::before {
+	background-color: rgba(0, 133, 60, 0.75);
+	bottom: 0;
+	content: '';
+	left: 0;
+	position: absolute;
+	right: 66.67%;
+	top: 0;
 }
 
-#footer__bottom .social-nav .nav-item {
-	display: inline-block;
+#landscape__section.opacity-left::after {
+	background-color: rgb(255, 255, 255);
+	bottom: 0;
+	content: '';
+	left: 33.33%;
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 
-#footer__bottom .social-nav .nav-item .nav-link {
-	padding: 0 1em 0.5em 0;
+#landscape__section .container {
+	position: relative;
+	z-index: 2;
+}
+/* HORIZONTAL SCROLLING SECTION
+___________________________________ */
+.scrolling-wrapper {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	padding: 2rem;
+	scrollbar-width: none;
+	-webkit-overflow-scrolling: touch;
+	width: 100%;
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+	display: none;
+}
+
+.scrolling-wrapper .card {
+	flex: 0 0 auto;
+	margin-right: 20%;
+	max-width: 32rem;
 }
