@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { routes } from './routes'
 import Helmet from 'react-helmet'
 import NavBar from './components/Navigations/NavBar'
-import MobileNav from './components/Navigations/MobileNav'
+// import MobileNav from './components/Navigations/MobileNav'
 import Footer from './components/Footer'
 // Stylesheets
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -29,7 +29,7 @@ function App() {
 			<Router>
 				<Helmet title='Stack Dev Env' />
 				<NavBar routes={routes} />
-				<MobileNav routes={routes} />
+				{/* <MobileNav routes={routes} /> */}
 				{routes.map((route, i) => {
 					if (route.hasOwnProperty('component')) {
 						return <Route key={i} {...route} />
