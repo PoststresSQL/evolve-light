@@ -4,9 +4,9 @@
 	--dark-black: rgb(18, 18, 18);
 	--light-black: rgb(74, 74, 74);
 	--light-gray: rgb(228, 228, 228);
-	--action: rgb(247, 183, 51);
+	--action: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
 	--primary: rgb(235, 157, 169);
-	--secondary: rgba(247, 183, 51, 0.8);
+	--secondary: rgb(247, 183, 51);
 	--offwhite: rgb(249, 250, 245);
 	--shadow: rgba(0, 0, 0, 0.2);
 }
@@ -56,7 +56,7 @@ html {
 }
 
 .btn.btn--primary .btn__text {
-	color: var(--offwhite) !important;
+	color: var(--light-black) !important;
 }
 
 .btn:hover {
@@ -67,7 +67,7 @@ html {
 }
 
 .btn.btn--primary:hover .btn__text {
-	color: var(--offwhite) !important;
+	color: var(--light-black) !important;
 }
 
 /* COLORS 
@@ -366,6 +366,15 @@ hr.center {
 
 /* INTERACTIVE MAP SECTIONS
 ____________________________ */
+
+.tab-content {
+	display: none;
+}
+
+.tab-content.active {
+	display: inline-block;
+}
+
 .marker-tabs li.tab-link {
 	position: absolute;
 	-webkit-transition: all ease 0.3s;
@@ -376,7 +385,7 @@ ____________________________ */
 .marker-tabs li.tab-link::before {
 	animation: pulse 2s ease infinite;
 	-webkit-animation: pulse 2s ease infinite;
-	background: var(--action);
+	background: var(--light-black);
 	border-radius: 50%;
 	bottom: 0;
 	content: '';
@@ -416,7 +425,46 @@ ____________________________ */
 	background: #fff;
 	background-repeat: repeat;
 	background-size: auto;
-	border: solid 8px var(--action);
+	border: solid 8px var(--light-black);
+	box-shadow: 0 6px 12px -3px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0 6px 12px -3px rgba(0, 0, 0, 0.4);
+	border-radius: 50%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	display: block;
+	height: 25px;
+	position: relative;
+	transition: all ease 0.3s;
+	-webkit-transition: all ease 0.3s;
+	-o-transition: all ease 0.3s;
+	width: 25px;
+}
+
+.marker-tabs li.tab-link.active::before {
+	animation: pulse 2s ease infinite;
+	-webkit-animation: pulse 2s ease infinite;
+	background: var(--secondary);
+	border-radius: 50%;
+	bottom: 0;
+	content: '';
+	height: 100%;
+	left: 0;
+	opacity: 1;
+	position: absolute;
+	right: 0;
+	top: 0;
+	-webkit-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	width: 100%;
+}
+
+.marker-tabs li.tab-link.active .tab-inner {
+	background: #fff;
+	background-repeat: repeat;
+	background-size: auto;
+	border: solid 8px var(--secondary);
 	box-shadow: 0 6px 12px -3px rgba(0, 0, 0, 0.4);
 	-webkit-box-shadow: 0 6px 12px -3px rgba(0, 0, 0, 0.4);
 	border-radius: 50%;
