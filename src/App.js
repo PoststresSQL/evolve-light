@@ -13,7 +13,15 @@ import './App.css'
 
 // FontAwesome setup
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faTimes } from '@fortawesome/free-solid-svg-icons'
+import {
+	faTimes,
+	faHistory,
+	faLeaf,
+	faRunning,
+	faStopwatch,
+	faHeart,
+	faPaintBrush
+} from '@fortawesome/free-solid-svg-icons'
 import {} from '@fortawesome/free-regular-svg-icons'
 import {
 	faInstagram,
@@ -21,7 +29,18 @@ import {
 	faTwitterSquare
 } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faInstagram, faFacebookSquare, faTwitterSquare, faTimes)
+library.add(
+	faInstagram,
+	faFacebookSquare,
+	faTwitterSquare,
+	faTimes,
+	faHistory,
+	faLeaf,
+	faRunning,
+	faStopwatch,
+	faHeart,
+	faPaintBrush
+)
 
 function App() {
 	return (
