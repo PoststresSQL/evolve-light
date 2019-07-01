@@ -16,6 +16,10 @@ html {
 	letter-spacing: 0.05rem;
 }
 
+body {
+	font-size: 1.6rem;
+}
+
 /* BUTTON UPDATED STYLES */
 
 .btn {
@@ -37,7 +41,7 @@ html {
 }
 
 .btn--lg {
-	padding: 1.2rem 2rem;
+	padding: 1.2rem 2rem !important;
 }
 
 .btn .btn__text {
@@ -191,6 +195,7 @@ a {
 blockquote {
 	font-family: 'Poppins', 'Source Sans Pro', 'Helvetica Neue', Helvetica,
 		sans-serif;
+	font-size: 2rem;
 }
 
 span {
