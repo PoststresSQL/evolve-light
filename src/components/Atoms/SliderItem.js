@@ -1,11 +1,7 @@
 import React from 'react'
 
-function SliderItem() {
-	return (
-		<div className='carousel-cell'>
-			<img src='https://placehold.it/400x300' alt='placeholder' />
-		</div>
-	)
+function SliderItem({ children }) {
+	return <div className='carousel-cell'>{children}</div>
 }
 
 export default SliderItem

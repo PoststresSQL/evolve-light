@@ -1,7 +1,6 @@
 import React from 'react'
 import Flickity from 'flickity'
 import 'flickity/dist/flickity.min.css'
-import SliderItem from './SliderItem'
 
 class Slider extends React.Component {
 	constructor(props) {
@@ -24,13 +23,7 @@ class Slider extends React.Component {
 	}
 
 	render() {
-		return (
-			<div className='main-carousel'>
-				{this.props.images.map((image, i) => {
-					return <SliderItem image={image} key={i} />
-				})}
-			</div>
-		)
+		return <div className='main-carousel'>{this.props.children}</div>
 	}
 }
 
