@@ -68,7 +68,7 @@ function Footer() {
 				</div>
 			</Section>
 
-			<footer className='space--sm footer-2 bg--primary'>
+			<footer className='space--sm footer-2 bg--dark'>
 				<div className='container'>
 					<div className='row'>
 						<div className='col-sm-6 col-md-3 col-xs-6'>
