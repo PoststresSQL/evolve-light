@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Section from '../components/Section'
 import TestimonialsSlider from './TestimonialsSlider'
 import { FontAwesomeIcon as FAI } from '@fortawesome/react-fontawesome'
 
@@ -47,6 +48,26 @@ function Footer() {
 					</div>
 				</li>
 			</TestimonialsSlider>
+
+			<Section id='footer-cta' className='text-center bg--secondary'>
+				<div class='col-12'>
+					<h2 class='big bold'>
+						<span id='cycle-1'>Look Better. </span>
+						<span id='cycle-2' style={{ display: 'none' }}>
+							Feel Younger.
+						</span>
+						<span id='cycle-3' style={{ display: 'none' }}>
+							Be Confident.
+						</span>
+					</h2>
+					<a class='btn btn--primary border--round' href='/contact'>
+						<span class='btn__text'>
+							schedule your consultation
+						</span>
+					</a>
+				</div>
+			</Section>
+
 			<footer className='space--sm footer-2 bg--primary'>
 				<div className='container'>
 					<div className='row'>
@@ -104,7 +125,8 @@ function Footer() {
 					<div className='row'>
 						<div className='col-sm-6'>
 							<span className='type--fine-print'>
-								© <span className='update-year' /> ((company))
+								© <span className='update-year' />
+								((company))
 							</span>
 							<Link to='/' className='type--fine-print' href='#'>
 								Privacy Policy
