@@ -1,6 +1,6 @@
 /* VARIBALES */
 :root {
-	--body: rgb(245, 245, 245);
+	--body: rgb(255, 255, 255);
 	--dark-black: rgb(18, 18, 18);
 	--light-black: rgb(74, 74, 74);
 	--light-gray: rgb(228, 228, 228);
@@ -126,6 +126,7 @@ h6 {
 	margin-bottom: 0.4em !important;
 }
 
+h1,
 h2 {
 	font-family: 'Playfair Display', 'Poppins' !important;
 }
@@ -192,7 +193,8 @@ span {
 }
 
 p {
-	font-family: 'Times New Roman', Georgia, Times, serif;
+	font-family: 'Poppins', 'Source Sans Pro', 'Helvetica Neue', Helvetica,
+		sans-serif;
 	font-size: 1.6rem;
 	line-height: 1.7;
 	margin-bottom: 0.4em !important;
@@ -262,6 +264,11 @@ __________________________*/
 	font-size: 1.4rem !important;
 }
 
+.bar-1 .menu-horizontal > li > .dropdown__trigger,
+.bar-1 .menu-horizontal > li > a {
+	text-transform: none;
+}
+
 .dropdown:hover > .dropdown__trigger + .dropdown__container,
 .dropdown > .dropdown__trigger + .dropdown__container:hover {
 	display: block;
@@ -275,94 +282,6 @@ __________________________*/
 
 /* HEADER SECTION
 __________________________*/
-
-/* SERVICES SECTIONS
-_________________________ */
-.feature-large [class*='col-']:first-child::before {
-	background: var(--secondary);
-	bottom: 0;
-	border-radius: 0.6rem;
-	content: '';
-	left: 40%;
-	position: absolute;
-	right: 0;
-	top: 40%;
-	transform: translate(1.6rem, 3rem);
-	z-index: -1;
-}
-
-.feature-large.switchable--switch [class*='col-']:first-child::before {
-	content: '';
-	left: 0;
-	right: 40%;
-	top: 40%;
-	transform: translate(-1.6rem, 3rem);
-}
-
-/* TERRA SECTION
-_________________________ */
-#terra__section .col-md-8 * {
-	position: relative;
-}
-
-#terra__section .watermark-text {
-	left: 50%;
-	position: absolute;
-	transform: translate(-30%, -25px);
-	width: 100%;
-}
-
-/* TESTIMONIAL SECTION
-_________________________ */
-.testimonial.testimonial-1 .row > div {
-	border: solid 1px #d5d5d5;
-	border-radius: 6px;
-	padding: 40px;
-}
-
-.testimonial.testimonial-1 .row blockquote {
-	font-size: 1.9rem;
-	line-height: 3.5rem;
-}
-
-/* PROCESS SECTION
-_________________________ */
-#process__section .number {
-	border: solid 2px #d5d5d5;
-	border-radius: 50%;
-	color: var(--primary);
-	display: flex;
-	font-size: 2.4rem;
-	height: 8rem;
-	flex-direction: column;
-	justify-content: center;
-	margin: auto;
-	margin-bottom: 2.5rem;
-	width: 8rem;
-}
-
-/* FOOTER
-__________________________*/
-
-/* TITLE HR BAR STYLES
-_________________________ */
-hr {
-	background-color: var(--action) !important;
-	content: '';
-	display: block;
-	height: 0.4rem;
-	margin: 2.5rem 0 3.5rem 0;
-	opacity: 1 !important;
-	width: 6rem;
-}
-
-hr.center {
-	margin: 2rem auto 3rem auto;
-}
-
-.bg--dark hr {
-	background-color: var(--primary) !important;
-}
 
 /* INTERACTIVE MAP SECTIONS
 ____________________________ */
@@ -480,12 +399,120 @@ ____________________________ */
 	width: 25px;
 }
 
-/* SLIDER STYLES
-__________________________ */
-.main-carousel .carousel-cell {
-	height: 400px;
-	margin: 0 5%;
-	width: 600px;
+/* SERVICES SECTIONS
+_________________________ */
+.feature-large [class*='col-']:first-child::before {
+	background: var(--secondary);
+	bottom: 0;
+	border-radius: 0.6rem;
+	content: '';
+	left: 40%;
+	position: absolute;
+	right: 0;
+	top: 40%;
+	transform: translate(1.6rem, 3rem);
+	z-index: -1;
+}
+
+.feature-large.switchable--switch [class*='col-']:first-child::before {
+	content: '';
+	left: 0;
+	right: 40%;
+	top: 40%;
+	transform: translate(-1.6rem, 3rem);
+}
+
+/* TERRA SECTION
+_________________________ */
+#terra__section .col-md-8 * {
+	position: relative;
+}
+
+#terra__section .watermark-text {
+	left: 50%;
+	position: absolute;
+	transform: translate(-30%, -25px);
+	width: 100%;
+}
+
+/* TESTIMONIAL SECTION
+_________________________ */
+.testimonial.testimonial-1 .row > div {
+	border: solid 1px #d5d5d5;
+	border-radius: 6px;
+	padding: 40px;
+}
+
+.testimonial.testimonial-1 .row blockquote {
+	font-size: 1.9rem;
+	line-height: 3.5rem;
+}
+
+/* PROCESS SECTION
+_________________________ */
+#process__section .number {
+	border: solid 2px #d5d5d5;
+	border-radius: 50%;
+	color: var(--primary);
+	display: flex;
+	font-size: 2.4rem;
+	height: 8rem;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+	margin-bottom: 2.5rem;
+	width: 8rem;
+}
+
+/* FOOTER
+__________________________*/
+
+/* CARDS
+__________________________*/
+div[class*='col-'] .card {
+	margin-bottom: 3.2rem;
+}
+
+/* HORIZONTAL SCROLLING SECTION
+___________________________________ */
+.scrolling-wrapper {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	padding: 2rem;
+	scrollbar-width: none;
+	-webkit-overflow-scrolling: touch;
+	width: 100%;
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+	display: none;
+}
+
+.scrolling-wrapper .card {
+	flex: 0 0 auto;
+	margin-right: 20%;
+	max-width: 32rem;
+}
+
+/* HR BAR STYLES
+_________________________ */
+hr {
+	background-color: var(--secondary) !important;
+	content: '';
+	display: block;
+	height: 0.4rem;
+	margin: 2.5rem 0 3.5rem 0;
+	opacity: 1 !important;
+	width: 6rem;
+}
+
+hr.center {
+	margin: 2rem auto 3rem auto;
+}
+
+.bg--dark hr {
+	background-color: var(--primary) !important;
 }
 
 /* LANDSCAPING SECTION
@@ -520,24 +547,11 @@ _________________________ */
 	position: relative;
 	z-index: 2;
 }
-/* HORIZONTAL SCROLLING SECTION
-___________________________________ */
-.scrolling-wrapper {
-	display: flex;
-	flex-wrap: nowrap;
-	overflow-x: auto;
-	padding: 2rem;
-	scrollbar-width: none;
-	-webkit-overflow-scrolling: touch;
-	width: 100%;
-}
 
-.scrolling-wrapper::-webkit-scrollbar {
-	display: none;
-}
-
-.scrolling-wrapper .card {
-	flex: 0 0 auto;
-	margin-right: 20%;
-	max-width: 32rem;
+/* SLIDER STYLES
+__________________________ */
+.main-carousel .carousel-cell {
+	height: 400px;
+	margin: 0 5%;
+	width: 600px;
 }
