@@ -225,8 +225,12 @@ p.big {
 	font-weight: 900;
 }
 
+.accordion li .accordion__title {
+	font-size: 1.6rem;
+}
+
 .accordion li.active .accordion__content {
-	max-height: 550px;
+	max-height: 65rem;
 }
 
 .el--vertical-center {
@@ -437,7 +441,7 @@ _________________________ */
 
 /* TESTIMONIAL SECTION
 _________________________ */
-.testimonial.testimonial-1 .row > div {
+.testimonial.testimonial-1 .row > div.col-lg-8:nth-of-type(1) {
 	border: solid 1px #d5d5d5;
 	border-radius: 6px;
 	padding: 40px;
@@ -546,6 +550,13 @@ _________________________ */
 #landscape__section .container {
 	position: relative;
 	z-index: 2;
+}
+
+/* PRE/POST PROCESS STYLES
+__________________________ */
+.care__list {
+	list-style-type: disc;
+	padding-left: 1.6rem;
 }
 
 /* SLIDER STYLES
