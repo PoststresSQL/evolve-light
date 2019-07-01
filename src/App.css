@@ -93,6 +93,11 @@ section {
 	padding: 7.5rem 0 !important;
 }
 
+.bg--primary,
+.bg--secondary {
+	z-index: -2;
+}
+
 .bg--dark * {
 	color: var(--offwhite);
 }
